@@ -3,185 +3,136 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Learning Engineer Portfolio - Ru Ito</title>
+    <title>Ru - ML/AI エンジニアリング</title>
+    <meta name="description" content="Ru は機械学習モデルの開発からインフラ構築、技術コンサルティングまで、ML/AI領域のビジネス課題を解決する個人事業です。">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">Portfolio</div>
+            <div class="nav-logo">Ru</div>
             <div class="nav-toggle" onclick="toggleMenu()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#hero" onclick="closeMenu()">Home</a></li>
-                <li><a href="#about" onclick="closeMenu()">About</a></li>
-                <li><a href="#education" onclick="closeMenu()">Education</a></li>
-                <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
-                <li><a href="#papers" onclick="closeMenu()">Papers</a></li>
-                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                <li><a href="#hero" onclick="closeMenu()">ホーム</a></li>
+                <li><a href="#services" onclick="closeMenu()">サービス</a></li>
+                <li><a href="#about" onclick="closeMenu()">代表紹介</a></li>
+                <li><a href="#skills" onclick="closeMenu()">技術スタック</a></li>
+                <li><a href="#publications" onclick="closeMenu()">研究実績</a></li>
+                <li><a href="#contact" onclick="closeMenu()">お問い合わせ</a></li>
             </ul>
         </div>
     </nav>
-    
+
     <main>
         <section id="hero" class="hero-section">
             <div class="hero-content">
-                <h1>Hello, I'm Ru Ito</h1>
-                <h2>Machine Learning Engineer</h2>
-                <p>機械学習とルールベースの手法を組み合わせた推薦システムの開発を専門とするエンジニアです。インフラ構築からバックエンド開発、機械学習モデルの実装、データ分析まで、幅広い技術領域での豊富な経験と実践的なスキルを持っています。</p>
+                <p class="hero-label">ML/AI Engineering</p>
+                <h1>機械学習で、<br>ビジネスを前へ。</h1>
+                <p class="hero-description">MLモデルの開発からインフラ構築まで、<br>データドリブンなビジネス課題の解決をサポートします。</p>
                 <div class="hero-buttons">
-                    <a href="#about" class="btn-primary">About Me</a>
-                    <a href="#contact" class="btn-secondary">Contact</a>
+                    <a href="#services" class="btn-primary">サービスを見る</a>
+                    <a href="#contact" class="btn-secondary">お問い合わせ</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-decoration"></div>
+            </div>
+        </section>
+
+        <section id="services" class="section">
+            <div class="container">
+                <p class="section-label">Services</p>
+                <h2 class="section-title">提供サービス</h2>
+                <p class="section-subtitle">ML/AI領域の幅広いニーズに対応します</p>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>MLモデル開発</h3>
+                        <p>推薦システム、画像認識、自然言語処理など、ビジネス課題に最適な機械学習モデルの設計・開発・評価を行います。</p>
+                        <ul class="service-features">
+                            <li>推薦システムの設計・実装</li>
+                            <li>画像処理・コンピュータビジョン</li>
+                            <li>モデルの評価・改善</li>
+                            <li>A/Bテストの設計・分析</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
+                        <h3>MLインフラ構築</h3>
+                        <p>MLモデルを本番環境で安定して運用するためのパイプライン設計、インフラ構築、MLOpsの導入を支援します。</p>
+                        <ul class="service-features">
+                            <li>MLパイプラインの設計・構築</li>
+                            <li>クラウドインフラ（GCP）構築</li>
+                            <li>データ基盤の設計</li>
+                            <li>CI/CD・MLOpsの導入</li>
+                        </ul>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3>技術コンサルティング</h3>
+                        <p>ML/AIの導入検討から技術選定、チーム立ち上げまで、技術的な意思決定をサポートします。</p>
+                        <ul class="service-features">
+                            <li>ML/AI導入の技術検証（PoC）</li>
+                            <li>技術選定・アーキテクチャ設計</li>
+                            <li>データ活用戦略の策定</li>
+                            <li>技術レビュー・メンタリング</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
-        
-        <section id="about" class="section">
-            <div class="floating-shapes"></div>
+
+        <section id="about" class="section section-alt">
             <div class="container">
-                <h2 class="section-title parallax-element">About Me</h2>
-                <div class="overview-grid">
-                    <div class="overview-card parallax-element" onclick="scrollToSection('about-detail')">
-                        <div class="card-icon">👨‍💻</div>
-                        <h3>Skills & Background</h3>
-                        <p>技術スキルと専門的なバックグラウンド</p>
-                        <div class="card-arrow">→</div>
-                    </div>
-                    <div class="overview-card parallax-element" onclick="scrollToSection('education')">
-                        <div class="card-icon">🎓</div>
-                        <h3>Education</h3>
-                        <p>学術的背景と継続的な学習への取り組み</p>
-                        <div class="card-arrow">→</div>
-                    </div>
-                    <div class="overview-card parallax-element" onclick="scrollToSection('experience')">
-                        <div class="card-icon">💼</div>
-                        <h3>Experience</h3>
-                        <p>機械学習エンジニアとしての実務経験</p>
-                        <div class="card-arrow">→</div>
-                    </div>
-                    <div class="overview-card parallax-element" onclick="scrollToSection('papers')">
-                        <div class="card-icon">📚</div>
-                        <h3>Publications</h3>
-                        <p>研究論文と技術記事の執筆・発表実績</p>
-                        <div class="card-arrow">→</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="about-detail" class="section">
-            <div class="floating-shapes"></div>
-            <div class="container">
-                <h2 class="section-title parallax-element">Skills & Background</h2>
+                <p class="section-label">About</p>
+                <h2 class="section-title">代表紹介</h2>
                 <div class="about-content">
-                    <div class="about-text parallax-element">
-                        <p>推薦システムの設計・開発に特化したエンジニアとして、機械学習とルールベースの手法を組み合わせたソリューション構築に取り組んでいます。</p>
-                        <p>特に深層学習を用いた超解像技術の研究と、実際のビジネス環境での推薦システム実装において専門性を持ち、データドリブンなアプローチでユーザー体験の向上に貢献しています。</p>
+                    <div class="about-text">
+                        <h3>伊藤 瑠海 <span class="about-role">/ Ru Ito</span></h3>
+                        <p class="about-position">ソフトウェアエンジニア・機械学習エンジニア</p>
+                        <p>千葉大学・同大学院にて深層学習を用いた超解像技術を研究し、修士課程を修了。大学院在学中はタイの研究者との国際共同研究にも従事し、学術論文を発表しました。</p>
+                        <p>2025年より株式会社ZOZOにて機械学習エンジニアとして、推薦モデルの開発やMLパイプラインの構築に携わっています。</p>
+                        <p>個人事業「Ru」として、本業で培った知見を活かしたMLモデル開発・インフラ構築・技術コンサルティングサービスを提供しています。</p>
                     </div>
-                    <div class="skills parallax-element">
-                        <h3>Technical Skills</h3>
-                        <div class="skills-grid">
-                            <div class="skill-category">
-                                <h4>プログラミング言語</h4>
-                                <div class="skill-item">
-                                    <div class="skill-name">Python</div>
-                                    <div class="skill-level">
-                                        <div class="skill-bar" data-level="90">
-                                            <div class="skill-bar-fill"></div>
-                                        </div>
-                                        <span class="skill-years">5年</span>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-name">Go</div>
-                                    <div class="skill-level">
-                                        <div class="skill-bar" data-level="40">
-                                            <div class="skill-bar-fill"></div>
-                                        </div>
-                                        <span class="skill-years">1年</span>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-name">JavaScript</div>
-                                    <div class="skill-level">
-                                        <div class="skill-bar" data-level="40">
-                                            <div class="skill-bar-fill"></div>
-                                        </div>
-                                        <span class="skill-years">1年</span>
-                                    </div>
+                    <div class="about-career">
+                        <h4>経歴</h4>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2025 - 現在</span>
+                                    <h5>株式会社ZOZO</h5>
+                                    <p>機械学習エンジニアとして推薦モデル・MLパイプラインの構築に従事</p>
                                 </div>
                             </div>
-                            <div class="skill-category">
-                                <h4>機械学習・AI</h4>
-                                <div class="skill-item">
-                                    <div class="skill-name">PyTorch</div>
-                                    <div class="skill-level">
-                                        <div class="skill-bar" data-level="70">
-                                            <div class="skill-bar-fill"></div>
-                                        </div>
-                                        <span class="skill-years">3年</span>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-name">Scikit-learn</div>
-                                    <div class="skill-level">
-                                        <div class="skill-bar" data-level="40">
-                                            <div class="skill-bar-fill"></div>
-                                        </div>
-                                        <span class="skill-years">1年</span>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-name">推薦システム</div>
-                                    <div class="skill-level">
-                                        <div class="skill-bar" data-level="40">
-                                            <div class="skill-bar-fill"></div>
-                                        </div>
-                                        <span class="skill-years">1年</span>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-name">コンピュータビジョン</div>
-                                    <div class="skill-level">
-                                        <div class="skill-bar" data-level="70">
-                                            <div class="skill-bar-fill"></div>
-                                        </div>
-                                        <span class="skill-years">3年</span>
-                                    </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2023 - 2025</span>
+                                    <h5>千葉大学大学院 融合理工学府 数学情報科学専攻</h5>
+                                    <p>深層学習を用いた超解像技術の研究、修士課程修了</p>
                                 </div>
                             </div>
-                            <div class="skill-category">
-                                <h4>インフラ・ツール</h4>
-                                <div class="skill-item">
-                                    <div class="skill-name">GCP</div>
-                                    <div class="skill-level">
-                                        <div class="skill-bar" data-level="40">
-                                            <div class="skill-bar-fill"></div>
-                                        </div>
-                                        <span class="skill-years">1年</span>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-name">Docker</div>
-                                    <div class="skill-level">
-                                        <div class="skill-bar" data-level="55">
-                                            <div class="skill-bar-fill"></div>
-                                        </div>
-                                        <span class="skill-years">2年</span>
-                                    </div>
-                                </div>
-                                <div class="skill-item">
-                                    <div class="skill-name">Git</div>
-                                    <div class="skill-level">
-                                        <div class="skill-bar" data-level="80">
-                                            <div class="skill-bar-fill"></div>
-                                        </div>
-                                        <span class="skill-years">5年</span>
-                                    </div>
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-year">2019 - 2023</span>
+                                    <h5>千葉大学 工学部 情報工学コース</h5>
+                                    <p>コンピュータサイエンスを専攻、深層学習を用いた超解像の研究</p>
                                 </div>
                             </div>
                         </div>
@@ -189,157 +140,150 @@
                 </div>
             </div>
         </section>
-        
-        <section id="education" class="section">
-            <div class="floating-shapes"></div>
+
+        <section id="skills" class="section">
             <div class="container">
-                <h2 class="section-title parallax-element">Education</h2>
-                <div class="timeline">
-                    <div class="timeline-item parallax-element">
-                        <div class="timeline-year">2023 - 2025</div>
-                        <div class="timeline-content">
-                            <h3>千葉大学大学院 数学情報科学専攻 情報科学コース</h3>
-                            <p>深層学習を用いた超解像技術の研究に従事。画像処理とコンピュータビジョンの分野で修士課程を修了。</p>
+                <p class="section-label">Tech Stack</p>
+                <h2 class="section-title">技術スタック</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h4>言語</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">SQL</span>
                         </div>
                     </div>
-                    <div class="timeline-item parallax-element">
-                        <div class="timeline-year">2019 - 2023</div>
-                        <div class="timeline-content">
-                            <h3>千葉大学工学部 情報工学コース</h3>
-                            <p>コンピュータサイエンスを専攻し、深層学習を用いた超解像に関する研究を行った。アルゴリズム、データ構造、機械学習の基礎を修得。</p>
+                    <div class="skill-category">
+                        <h4>MLモデル</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">超解像</span>
+                            <span class="skill-tag">決定木</span>
+                            <span class="skill-tag">推薦</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>インフラ</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GCP</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h4>LLM / AIサービス</h4>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Claude</span>
+                            <span class="skill-tag">Claude Code</span>
+                            <span class="skill-tag">ChatGPT</span>
+                            <span class="skill-tag">Codex</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        
-        <section id="experience" class="section">
-            <div class="floating-shapes"></div>
+
+        <section id="publications" class="section section-alt">
             <div class="container">
-                <h2 class="section-title parallax-element">Experience</h2>
-                <div class="timeline">
-                    <div class="timeline-item parallax-element">
-                        <div class="timeline-year">2025 - Present</div>
-                        <div class="timeline-content">
-                            <h3>Machine Learning Engineer</h3>
-                            <p>推薦システムの要件定義から設計、実装、A/Bテストまでの一連の開発プロセスを担当。機械学習とルールベースの手法を組み合わせた効果的なレコメンデーションアルゴリズムの構築と改善に従事。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-        <section id="papers" class="section">
-            <div class="floating-shapes"></div>
-            <div class="container">
-                <h2 class="section-title parallax-element">Publications</h2>
+                <p class="section-label">Publications</p>
+                <h2 class="section-title">研究実績</h2>
                 <div class="papers-grid">
-                    <div class="paper-card parallax-element">
+                    <div class="paper-card">
+                        <div class="paper-tag">arXiv 2025</div>
                         <h3>Undertrained Image Reconstruction for Realistic Degradation in Blind Image Super-Resolution</h3>
                         <p class="paper-authors">Ru Ito, Supatta Viriyavisuthisakul, Kazuhiko Kawamoto, Hiroshi Kera</p>
-                        <p class="paper-venue">arXiv:2503.02767, 2025 (タイの研究者との共同研究)</p>
+                        <p class="paper-venue">arXiv:2503.02767, 2025（タイの研究者との国際共同研究）</p>
                         <div class="paper-abstract">
-                            <p><strong>概要:</strong> ブラインド画像超解像において、現実的な劣化に対処するための新しいアプローチを提案。従来の手法とは異なり、意図的に学習を制限した画像再構成手法を用いることで、実世界の複雑な劣化パターンに対してより堅牢な超解像性能を実現。深層学習モデルの過学習を抑制し、未知の劣化に対する汎化性能を大幅に向上させることに成功した。</p>
+                            <p>ブラインド画像超解像において、現実的な劣化に対処するための新しいアプローチを提案。意図的に学習を制限した画像再構成手法を用いることで、実世界の複雑な劣化パターンに対してより堅牢な超解像性能を実現しました。</p>
                         </div>
-                        <a href="https://arxiv.org/abs/2503.02767" class="paper-link">View Paper</a>
+                        <a href="https://arxiv.org/abs/2503.02767" class="paper-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-external-link-alt"></i> 論文を読む
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
-        
-        
+
         <section id="contact" class="section">
             <div class="container">
-                <h2 class="section-title">Contact</h2>
+                <p class="section-label">Contact</p>
+                <h2 class="section-title">お問い合わせ</h2>
+                <p class="section-subtitle">ML/AIに関するご相談やお仕事のご依頼など、お気軽にお問い合わせください</p>
                 <div class="contact-content">
-                    <p>お気軽にご連絡ください</p>
-                    <div class="contact-links">
-                        <a href="https://linkedin.com/in/伊藤瑠海" class="contact-link">
-                            <i class="fab fa-linkedin"></i>
-                            LinkedIn
+                    <div class="contact-main">
+                        <a href="mailto:itoru03@gmail.com" class="contact-email">
+                            <i class="fas fa-envelope"></i>
+                            <span>itoru03@gmail.com</span>
                         </a>
-                        <a href="https://github.com/rabbit-313" class="contact-link">
+                    </div>
+                    <div class="contact-links">
+                        <a href="https://github.com/rabbit-313" class="contact-link" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-github"></i>
                             GitHub
                         </a>
-                        <a href="https://qiita.com/rabbit-313" class="contact-link">
+                        <a href="https://linkedin.com/in/伊藤瑠海" class="contact-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="https://qiita.com/rabbit-313" class="contact-link" target="_blank" rel="noopener noreferrer">
                             <i class="fas fa-pen-nib"></i>
                             Qiita
                         </a>
-                        <a href="https://x.com/rabbit_x86" class="contact-link">
+                        <a href="https://x.com/rabbit_x86" class="contact-link" target="_blank" rel="noopener noreferrer">
                             <i class="fab fa-twitter"></i>
-                            X (Twitter)
+                            X
                         </a>
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    
+
     <footer>
         <div class="container">
-            <p>&copy; 2025 Ru Ito. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-logo">Ru</div>
+                <p>&copy; 2025 Ru. All rights reserved.</p>
+            </div>
         </div>
     </footer>
-    
+
     <script>
         function toggleMenu() {
             const navMenu = document.querySelector('.nav-menu');
             navMenu.classList.toggle('active');
         }
-        
+
         function closeMenu() {
             const navMenu = document.querySelector('.nav-menu');
             navMenu.classList.remove('active');
         }
-        
-        // Close menu when clicking outside
+
         document.addEventListener('click', function(e) {
             const navMenu = document.querySelector('.nav-menu');
             const navToggle = document.querySelector('.nav-toggle');
-            
             if (!navMenu.contains(e.target) && !navToggle.contains(e.target)) {
                 navMenu.classList.remove('active');
             }
         });
-        
-        // Parallax scroll animations
+
         function handleScroll() {
-            const elements = document.querySelectorAll('.parallax-element');
+            const elements = document.querySelectorAll('.animate-on-scroll');
             const windowHeight = window.innerHeight;
-            
+
             elements.forEach(element => {
                 const elementTop = element.getBoundingClientRect().top;
-                if (elementTop < windowHeight - 100) {
+                if (elementTop < windowHeight - 80) {
                     element.classList.add('visible');
-                    
-                    // Animate skill bars when they become visible
-                    const skillBars = element.querySelectorAll('.skill-bar');
-                    skillBars.forEach(bar => {
-                        if (!bar.classList.contains('animated')) {
-                            bar.classList.add('animated');
-                            const level = bar.getAttribute('data-level');
-                            const fillElement = bar.querySelector('.skill-bar-fill');
-                            
-                            if (fillElement) {
-                                setTimeout(() => {
-                                    fillElement.style.width = level + '%';
-                                }, 200);
-                            }
-                        }
-                    });
                 }
             });
-            
-            // Hero parallax effect
-            const scrolled = window.pageYOffset;
-            const heroSection = document.querySelector('.hero-section');
-            if (heroSection) {
-                heroSection.style.transform = `translateY(${scrolled * 0.5}px)`;
+
+            // Navbar background on scroll
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
             }
         }
-        
-        // Smooth scroll for navigation links
+
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -352,19 +296,16 @@
                 }
             });
         });
-        
-        // Scroll to section function
-        function scrollToSection(sectionId) {
-            const section = document.getElementById(sectionId);
-            if (section) {
-                section.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        }
-        
-        // Initialize animations
+
+        // Add animate-on-scroll class to elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const animateElements = document.querySelectorAll(
+                '.service-card, .about-content, .timeline-item, .skill-category, .paper-card, .contact-content, .section-title, .section-subtitle, .section-label'
+            );
+            animateElements.forEach(el => el.classList.add('animate-on-scroll'));
+            handleScroll();
+        });
+
         window.addEventListener('scroll', handleScroll);
         window.addEventListener('load', handleScroll);
     </script>
