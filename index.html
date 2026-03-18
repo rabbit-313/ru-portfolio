@@ -6,10 +6,9 @@
     <title>Ru - ML/AI エンジニアリング</title>
     <meta name="description" content="Ru は機械学習モデルの開発からインフラ構築、技術コンサルティングまで、ML/AI領域のビジネス課題を解決する個人事業です。">
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400&family=Outfit:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -21,41 +20,57 @@
                 <span></span>
             </div>
             <ul class="nav-menu">
-                <li><a href="#hero" onclick="closeMenu()">ホーム</a></li>
-                <li><a href="#services" onclick="closeMenu()">サービス</a></li>
-                <li><a href="#about" onclick="closeMenu()">代表紹介</a></li>
-                <li><a href="#skills" onclick="closeMenu()">技術スタック</a></li>
-                <li><a href="#publications" onclick="closeMenu()">研究実績</a></li>
-                <li><a href="#contact" onclick="closeMenu()">お問い合わせ</a></li>
+                <li><a href="#hero" onclick="closeMenu()">Home</a></li>
+                <li><a href="#services" onclick="closeMenu()">Services</a></li>
+                <li><a href="#about" onclick="closeMenu()">About</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#publications" onclick="closeMenu()">Publications</a></li>
             </ul>
+            <a href="#contact" class="nav-contact">Contact</a>
         </div>
     </nav>
 
     <main>
         <section id="hero" class="hero-section">
             <div class="hero-content">
-                <p class="hero-label">ML/AI Engineering</p>
-                <h1>機械学習で、<br>ビジネスを前へ。</h1>
-                <p class="hero-description">MLモデルの開発からインフラ構築まで、<br>データドリブンなビジネス課題の解決をサポートします。</p>
-                <div class="hero-buttons">
-                    <a href="#services" class="btn-primary">サービスを見る</a>
-                    <a href="#contact" class="btn-secondary">お問い合わせ</a>
+                <div class="hero-left">
+                    <p class="hero-label">Machine Learning Engineer</p>
+                    <h1 class="hero-name">Ru Ito</h1>
+                    <p class="hero-role">ML Engineer / Researcher<br>Models, Pipelines, Infrastructure</p>
+                    <div class="hero-meta">
+                        <div class="hero-meta-item">
+                            <span class="hero-meta-label">Focus</span>
+                            <span class="hero-meta-value">ML Systems</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <span class="hero-meta-label">Based in</span>
+                            <span class="hero-meta-value">Tokyo, Japan</span>
+                        </div>
+                        <div class="hero-meta-item">
+                            <span class="hero-meta-label">Experience</span>
+                            <span class="hero-meta-value">Since 2019</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="hero-visual">
-                <div class="hero-decoration"></div>
+                <div class="hero-visual">
+                    <div class="oak-ring oak-ring-1"></div>
+                    <div class="oak-ring oak-ring-2"></div>
+                    <div class="oak-dot oak-dot-1"></div>
+                    <div class="oak-dot oak-dot-2"></div>
+                    <div class="oak-dot oak-dot-3"></div>
+                    <div class="oak-visual"></div>
+                </div>
             </div>
         </section>
 
-        <section id="services" class="section">
+        <section id="services" class="section section-alt">
             <div class="container">
                 <p class="section-label">Services</p>
-                <h2 class="section-title">提供サービス</h2>
-                <p class="section-subtitle">ML/AI領域の幅広いニーズに対応します</p>
+                <h2 class="section-title">What I Do</h2>
                 <div class="services-grid">
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-brain"></i>
+                            <svg width="24" height="24" fill="none" stroke="var(--oak-accent)" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4M2 12h4m12 0h4m-2.8-7.2-2.8 2.8M7.6 16.4l-2.8 2.8m0-14.4 2.8 2.8m8.8 8.8 2.8 2.8"/></svg>
                         </div>
                         <h3>MLモデル開発</h3>
                         <p>推薦システム、画像認識、自然言語処理など、ビジネス課題に最適な機械学習モデルの設計・開発・評価を行います。</p>
@@ -68,7 +83,7 @@
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-server"></i>
+                            <svg width="24" height="24" fill="none" stroke="var(--oak-accent)" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="6" width="20" height="12" rx="2"/><path d="M6 12h4m4 0h4M12 6v12"/></svg>
                         </div>
                         <h3>MLインフラ構築</h3>
                         <p>MLモデルを本番環境で安定して運用するためのパイプライン設計、インフラ構築、MLOpsの導入を支援します。</p>
@@ -81,7 +96,7 @@
                     </div>
                     <div class="service-card">
                         <div class="service-icon">
-                            <i class="fas fa-lightbulb"></i>
+                            <svg width="24" height="24" fill="none" stroke="var(--oak-accent)" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6 2 12s4.48 10 10 10 10-4 10-10S17.52 2 12 2z"/><path d="M2 12h20M12 2c2.5 3 4 6.5 4 10s-1.5 7-4 10c-2.5-3-4-6.5-4-10s1.5-7 4-10z"/></svg>
                         </div>
                         <h3>技術コンサルティング</h3>
                         <p>ML/AIの導入検討から技術選定、チーム立ち上げまで、技術的な意思決定をサポートします。</p>
@@ -96,14 +111,14 @@
             </div>
         </section>
 
-        <section id="about" class="section section-alt">
+        <section id="about" class="section">
             <div class="container">
                 <p class="section-label">About</p>
-                <h2 class="section-title">代表紹介</h2>
+                <h2 class="section-title">Profile</h2>
                 <div class="about-content">
                     <div class="about-text">
                         <h3>伊藤 瑠海 <span class="about-role">/ Ru Ito</span></h3>
-                        <p class="about-position">ソフトウェアエンジニア・機械学習エンジニア</p>
+                        <p class="about-position">ML Engineer / Researcher</p>
                         <p>千葉大学・同大学院にて深層学習を用いた超解像技術を研究し、修士課程を修了。大学院在学中はタイの研究者との国際共同研究にも従事し、学術論文を発表しました。</p>
                         <p>2025年より株式会社ZOZOにて機械学習エンジニアとして、推薦モデルの開発やMLパイプラインの構築に携わっています。</p>
                         <p>個人事業「Ru」として、本業で培った知見を活かしたMLモデル開発・インフラ構築・技術コンサルティングサービスを提供しています。</p>
@@ -112,25 +127,22 @@
                         <h4>経歴</h4>
                         <div class="timeline">
                             <div class="timeline-item">
-                                <div class="timeline-marker"></div>
                                 <div class="timeline-content">
-                                    <span class="timeline-year">2025 - 現在</span>
-                                    <h5>株式会社ZOZO</h5>
+                                    <span class="timeline-year">2025 —</span>
+                                    <h5>ZOZO, Inc.</h5>
                                     <p>機械学習エンジニアとして推薦モデル・MLパイプラインの構築に従事</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
-                                <div class="timeline-marker"></div>
                                 <div class="timeline-content">
-                                    <span class="timeline-year">2023 - 2025</span>
+                                    <span class="timeline-year">2023 — 2025</span>
                                     <h5>千葉大学大学院 融合理工学府 数学情報科学専攻</h5>
                                     <p>深層学習を用いた超解像技術の研究、修士課程修了</p>
                                 </div>
                             </div>
                             <div class="timeline-item">
-                                <div class="timeline-marker"></div>
                                 <div class="timeline-content">
-                                    <span class="timeline-year">2019 - 2023</span>
+                                    <span class="timeline-year">2019 — 2023</span>
                                     <h5>千葉大学 工学部 情報工学コース</h5>
                                     <p>コンピュータサイエンスを専攻、深層学習を用いた超解像の研究</p>
                                 </div>
@@ -141,20 +153,20 @@
             </div>
         </section>
 
-        <section id="skills" class="section">
+        <section id="skills" class="section section-alt">
             <div class="container">
                 <p class="section-label">Tech Stack</p>
-                <h2 class="section-title">技術スタック</h2>
+                <h2 class="section-title">Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h4>言語</h4>
+                        <h4>Languages</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">SQL</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>MLモデル</h4>
+                        <h4>ML Models</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">超解像</span>
                             <span class="skill-tag">決定木</span>
@@ -162,13 +174,15 @@
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>インフラ</h4>
+                        <h4>Infrastructure</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">GCP</span>
+                            <span class="skill-tag">Vertex AI</span>
+                            <span class="skill-tag">Kubeflow</span>
                         </div>
                     </div>
                     <div class="skill-category">
-                        <h4>LLM / AIサービス</h4>
+                        <h4>LLM / AI</h4>
                         <div class="skill-tags">
                             <span class="skill-tag">Claude</span>
                             <span class="skill-tag">Claude Code</span>
@@ -180,10 +194,10 @@
             </div>
         </section>
 
-        <section id="publications" class="section section-alt">
+        <section id="publications" class="section">
             <div class="container">
                 <p class="section-label">Publications</p>
-                <h2 class="section-title">研究実績</h2>
+                <h2 class="section-title">Research</h2>
                 <div class="papers-grid">
                     <div class="paper-card">
                         <div class="paper-tag">arXiv 2025</div>
@@ -194,40 +208,37 @@
                             <p>ブラインド画像超解像において、現実的な劣化に対処するための新しいアプローチを提案。意図的に学習を制限した画像再構成手法を用いることで、実世界の複雑な劣化パターンに対してより堅牢な超解像性能を実現しました。</p>
                         </div>
                         <a href="https://arxiv.org/abs/2503.02767" class="paper-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-external-link-alt"></i> 論文を読む
+                            <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                            論文を読む
                         </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="section">
+        <section id="contact" class="section section-alt">
             <div class="container">
                 <p class="section-label">Contact</p>
-                <h2 class="section-title">お問い合わせ</h2>
-                <p class="section-subtitle">ML/AIに関するご相談やお仕事のご依頼など、お気軽にお問い合わせください</p>
+                <h2 class="section-title">Get in Touch</h2>
                 <div class="contact-content">
                     <div class="contact-main">
-                        <a href="mailto:itoru03@gmail.com" class="contact-email">
-                            <i class="fas fa-envelope"></i>
-                            <span>itoru03@gmail.com</span>
-                        </a>
+                        <a href="mailto:itoru03@gmail.com" class="contact-email">itoru03@gmail.com</a>
                     </div>
                     <div class="contact-links">
                         <a href="https://github.com/rabbit-313" class="contact-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i>
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                             GitHub
                         </a>
                         <a href="https://linkedin.com/in/伊藤瑠海" class="contact-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-linkedin"></i>
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
                             LinkedIn
                         </a>
                         <a href="https://qiita.com/rabbit-313" class="contact-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-pen-nib"></i>
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M7.883 11.615c-4.218 0-7.641 3.424-7.641 7.641h3.82c0-2.109 1.712-3.82 3.82-3.82 2.11 0 3.821 1.711 3.821 3.82h3.82c0-4.217-3.423-7.641-7.64-7.641zm13.553-3.82c0-4.218-3.424-7.641-7.641-7.641-4.218 0-7.641 3.423-7.641 7.64h3.82c0-2.108 1.712-3.82 3.82-3.82 2.11 0 3.821 1.712 3.821 3.82 0 2.11-1.711 3.821-3.82 3.821v3.82c4.217 0 7.64-3.423 7.64-7.64z"/></svg>
                             Qiita
                         </a>
                         <a href="https://x.com/rabbit_x86" class="contact-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-twitter"></i>
+                            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                             X
                         </a>
                     </div>
@@ -240,7 +251,7 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-logo">Ru</div>
-                <p>&copy; 2025 Ru. All rights reserved.</p>
+                <p>&copy; 2025 Ru Ito. All rights reserved.</p>
             </div>
         </div>
     </footer>
@@ -275,7 +286,6 @@
                 }
             });
 
-            // Navbar background on scroll
             const navbar = document.querySelector('.navbar');
             if (window.scrollY > 50) {
                 navbar.classList.add('scrolled');
@@ -297,10 +307,9 @@
             });
         });
 
-        // Add animate-on-scroll class to elements
         document.addEventListener('DOMContentLoaded', function() {
             const animateElements = document.querySelectorAll(
-                '.service-card, .about-content, .timeline-item, .skill-category, .paper-card, .contact-content, .section-title, .section-subtitle, .section-label'
+                '.service-card, .about-content, .timeline-item, .skill-category, .paper-card, .contact-content, .section-title, .section-label'
             );
             animateElements.forEach(el => el.classList.add('animate-on-scroll'));
             handleScroll();
