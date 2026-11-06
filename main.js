@@ -60,7 +60,7 @@ function formationHelix(i, count) {
     ];
 }
 
-// Skills: 4つのクラスタ — スキルカテゴリ（画面の四隅寄りに配置）
+// Writing: 4つのクラスタ — 記事・登壇（画面の四隅寄りに配置）
 function formationClusters(i, count) {
     const CENTERS = [
         [-8.5, 4.2, -2],
